@@ -5,7 +5,7 @@ Documentation Reference: https://github.com/nadialefebvre/library
 This project was built as a means to learn ExpressJS in conjunction with Mongo Atlas (10 March 2023).
 
 ## Overview
-This simple Javascript server acts as a basic library managemement system, allowing users to manage book loans. Users will be able to perform CRUD (Create, Delete, Update, Delete) operations on loans through a set of RESTFUL API endpoints. This application was built using the ExpressJS framework and utilises a Mongo Database for database interactions.
+This simple Javascript server acts as a basic library managemement system, allowing users to manage a collection of books. Users will be able to perform CRUD (Create, Delete, Update, Delete) operations on the books through a set of RESTFUL API endpoints. This application was built using the ExpressJS framework and utilises a Mongo Database for database interactions.
 
 Here is a simple entity relationship diagram of the library system
 ![alt text](assets/library-erd.png)
@@ -30,6 +30,8 @@ nodemon
 ```
 
 The server will start and the API endpoints may be reached using tools such as Advanced REST Client, Postman or Insomnia
+
+## Example Usage
 
 ## Technological Stacks Used
 * JavaScript

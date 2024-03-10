@@ -1,6 +1,6 @@
 [
   {
-    "_id": 3001,
+    "id": 2001,
     "ISBN-10": "0735211299",
     "ISBN-13": "978-0735211292",
     "name": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
@@ -8,11 +8,11 @@
     "date_published": "2018-10-16",
     "page_count": 320,
     "languages": ["English"],
-    "authors": [4001],
+    "author_id": [4001],
     "publisher_id": 5001
   },
   {
-    "_id": 3002,
+    "id": 2002,
     "ISBN-10": "1544507879",
     "ISBN-13": "978-1544507873",
     "name": "Can't Hurt Me: Master Your Mind and Defy the Odds",
@@ -20,11 +20,11 @@
     "date_published": "2020-05-31",
     "page_count": 364,
     "languages": ["English"],
-    "authors": [4002],
+    "author_id": [4002],
     "publisher_id": 5002
   },
   {
-    "_id": 3003,
+    "id": 2003,
     "ISBN-10": "1455586692",
     "ISBN-13": "978-1455586691",
     "name": "Deep Work: Rules for Focused Success in a Distracted World",
@@ -32,11 +32,11 @@
     "date_published": "2016-01-05",
     "page_count": 304,
     "languages": ["English"],
-    "authors": [4003],
+    "author_id": [4003],
     "publisher_id": 5003
   },
   {
-    "_id": 3004,
+    "id": 2004,
     "ISBN-10": "1612681131",
     "ISBN-13": "978-1612681139",
     "name": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
@@ -44,11 +44,11 @@
     "date_published": "2022-04-05",
     "page_count": 336,
     "languages": ["English"],
-    "authors": [4004],
+    "author_id": [4004],
     "publisher_id": 5004
   },
   {
-    "_id": 3004,
+    "id": 2005,
     "ISBN-10": "0143130722",
     "ISBN-13": "978-0143130727",
     "name": "Ikigai: The Japanese Secret to a Long and Happy Life",
@@ -56,11 +56,11 @@
     "date_published": "2017-08-29",
     "page_count": 208,
     "languages": ["English"],
-    "authors": [4005, 4006],
+    "author_id": [4005, 4006],
     "publisher_id": 5005
   },
   {
-    "_id": 3005,
+    "id": 2006,
     "ISBN-10": "0143136631",
     "ISBN-13": "978-0143136637",
     "name": "The Love Prescription: Seven Days to More Intimacy, Connection, and Joy",
@@ -68,7 +68,7 @@
     "date_published": "2022-09-27",
     "page_count": 208,
     "languages": ["English"],
-    "authors": [4007, 4008],
+    "author_id": [4007, 4008],
     "publisher_id": 5005
   }
 ]
