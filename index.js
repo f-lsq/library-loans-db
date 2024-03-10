@@ -2,6 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongodb = require("mongodb");
+require.apply("dotenv").config();
 
 // Setting up a Mongo Client
 const MongoClient = mongodb.MongoClient;
@@ -22,17 +23,23 @@ async function connect(uri, dbname){
   return db;
 }
 
-function main(){
-  const uri = "mongodb+srv://root:itsnoteasy23@cluster0.jwyovzx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  const db = connect(uri, "library-system");
+async function main(){
+  const uri = process.env.MONGO_URI
+  const db = await connect(uri, "sample_mflix");
+  
+  // 2. ROUTES
+  app.get("/", async function(req,res){
+
+    // get the first 10 movies
+    const results = await db.collection("movies").find({}).limit(10).toArray()
+    
+    res.json({
+      "movies": results
+    })
+  })
 }
 
-// 2. ROUTES
-app.get("/", function(req,res){
-  res.json({
-    "message": "success"
-  })
-})
+main();
 
 // 3. STARTING THE SERVER
 app.listen(3001, function(){
