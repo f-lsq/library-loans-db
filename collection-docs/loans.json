@@ -1,0 +1,50 @@
+[
+  {
+    "_id": 2001,
+    "date_borrowed": "2024-03-07",
+    "date_due": "2024-03-28",
+    "loan_status": "ongoing",
+    "book_id": 3001,
+    "user": {
+      "_id": 1001,
+      "name": "Joyce Byers",
+      "dob": "1971-10-29"
+    }
+  },
+  {
+    "_id": 2002,
+    "date_borrowed": "2024-03-07",
+    "date_due": "2024-03-28",
+    "loan_status": "Ongoing",
+    "book_id": 3002,
+    "user": {
+      "_id": 1001,
+      "name": "Joyce Byers",
+      "dob": "1971-10-29"
+    }
+  },
+  {
+    "_id": 2003,
+    "date_borrowed": "2024-02-05",
+    "date_due": "2024-02-26",
+    "loan_status": "Closed",
+    "book_id": 3003,
+    "user": {
+      "_id": 1002,
+      "name": "Jane Hopper",
+      "dob": "2004-02-19"
+    }
+  },
+  {
+    "_id": 2004,
+    "date_borrowed": "2024-03-10",
+    "date_due": "2024-03-31",
+    "loan_status": "Ongoing",
+    "book_id": 3004,
+    "user": {
+      "_id": 1003,
+      "name": "Lucas Sinclair",
+      "dob": "2001-10-13"
+    }
+  }
+]
