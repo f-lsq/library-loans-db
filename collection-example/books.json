@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ObjectId('98765')",
+    "isbn_ten": "0735211299",
+    "isbn_thirteen": "978-0735211292",
+    "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+    "version": "First Edition",
+    "date_published": "2018-10-16",
+    "page_count": 320,
+    "language": ["English"],
+    "author": ["James Clear"],
+    "publisher_id": "ObjectId('12345')"
+  },
+  {
+    "id": "ObjectId('98766')",
+    "isbn_ten": "1544507879",
+    "isbn_thirteen": "978-1544507873",
+    "title": "Can't Hurt Me: Master Your Mind and Defy the Odds",
+    "version": "Clean Edition",
+    "date_published": "2020-05-31",
+    "page_count": 364,
+    "language": ["English"],
+    "author": ["David Goggins"],
+    "publisher_id": "ObjectId('12346')"
+  },
+  {
+    "id": "ObjectId('98767')",
+    "isbn_ten": "1455586692",
+    "isbn_thirteen": "978-1455586691",
+    "title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "version": "First Edition",
+    "date_published": "2016-01-05",
+    "page_count": 304,
+    "language": ["English"],
+    "author": ["Cal Newport"],
+    "publisher_id": "ObjectId('12347')"
+  },
+  {
+    "id": "ObjectId('98768')",
+    "isbn_ten": "1612681131",
+    "isbn_thirteen": "978-1612681139",
+    "title": "Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!",
+    "version": "25th Anniversary Edition",
+    "date_published": "2022-04-05",
+    "page_count": 336,
+    "language": ["English"],
+    "author": ["Robert T. Kiyosaki"],
+    "publisher_id": "ObjectId('12348')"
+  },
+  {
+    "id": "ObjectId('98769')",
+    "isbn_ten": "0143130722",
+    "isbn_thirteen": "978-0143130727",
+    "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "version": "Illustrated Edition",
+    "date_published": "2017-08-29",
+    "page_count": 208,
+    "language": ["English"],
+    "author": ["Héctor García", "Francesc Miralles"],
+    "publisher_id": "ObjectId('12349')"
+  },
+  {
+    "id": "ObjectId('98770')",
+    "isbn_ten": "0143136631",
+    "isbn_thirteen": "978-0143136637",
+    "title": "The Love Prescription: Seven Days to More Intimacy, Connection, and Joy",
+    "version": "First Edition",
+    "date_published": "2022-09-27",
+    "page_count": 208,
+    "language": ["English"],
+    "author": ["John Gottman", "Julie Schwartz Gottman"],
+    "publisher_id": "ObjectId('12349')"
+  }
+]
