@@ -48,6 +48,8 @@ The following API endpoints are available to perform the CRUD operations.
 ## Example Usage
 Here are some examples of how you can interact with the API and how it will be logged in MongoDB.
 
+*Note: The endpoint for books in the screenshots differ from the actual endpoint. Please use the `/books` endpoint!*
+
 ### Books 
 * Retrieve information of all books
 ```
@@ -100,10 +102,10 @@ PUT http://localhost:3001/books/{bookid}
 Successful update of existing book information in ARC:
 ![alt text](assets/update-books.png)
 
-Existing book information (before update) stored in MongoDB:
+Existing book information (before updating languages) stored in MongoDB:
 ![alt text](assets/create-books-db.png)
 
-Existing book information (after update) stored in MongoDB:
+Existing book information (after updating languages) stored in MongoDB:
 ![alt text](assets/update-books-db.png)
 
 *Note: Validation performed when updating a book information is the same as that when a new book is created*
@@ -123,10 +125,33 @@ Existing book information (after deletion) stored in MongoDB:
 
 ### Users
 * Create a new user
+```
+POST http://localhost:3001/user
+```
+Successful creation of new user in ARC:
+![alt text](assets/create-users.png)
+
+New user information stored in MongoDB:
+![alt text](assets/create-users-db.png)
+
 * Generate JSONWebToken via user login (expires in 3 days)
+```
+POST http://localhost:3001/login
+```
+Successful user login and generation of JSONWebToken in ARC:
+![alt text](assets/login-user.png)
+
 * Access protected route via valid JSONWebToken
+```
+POST http://localhost:3001/profile
+```
+Valid JSONWebToken used to access protected route in ARC:
+![alt text](assets/authorise-users.png)
+
+Invalid JSONWebToken used to access protected route in ARC:
+![alt text](assets/unauthorise-users.png)
 
 ## Technological Stacks Used
 * JavaScript
-* NPM Packages (Express, CORS, DotEnv)
+* NPM Packages (Express, CORS, DotEnv, bcrypt, JSONWebToken)
 * Mongo Atlas Database
