@@ -49,18 +49,54 @@ The following API endpoints are available to perform the CRUD operations.
 Here are some examples of how you can interact with the API and how it will be logged in MongoDB.
 
 ### Books 
-* Retreve information of all books
+* Retrieve information of all books
 ```
 GET http://localhost:3001/books
 ```
-Example of successful retrival of book information in ARC
-![alt text](assets/create-books.png)
+Successful retrival of book information in ARC:
+![alt text](assets/read-books.png)
 
-Example of book information stored in MongoDB
-![alt text](assets/create-books-db.png)
+Book information stored in MongoDB:
+![alt text](assets/read-books-db.png)
+
+Search by author:
+![alt text](assets/search-author.png)
+
+Search by language:
+![alt text](assets/search-language.png)
+
+Search by publisher:
+![alt text](assets/search-publisher.png)
+
+Search by title:
+![alt text](assets/search-title.png)
 
 * Create a new book
+```
+POST http://localhost:3001/books
+```
+Successful creation of new book in ARC:
+![alt text](assets/create-books.png)
+
+New book information stored in MongoDB:
+![alt text](assets/create-books-db.png)
+
+Validation of ISBN entered:
+![alt text](assets/validation-isbn.png)
+
+Validation of languages and authors entered:
+![alt text](assets/validation-array.png)
+
+Validation of publisher ID entered:
+![alt text](assets/validation-publisherid.png)
+
+Validation of other information entered:
+![alt text](assets/validation-all-info.png)
+
 * Update details of an existing book
+
+*Note: Validation performed when updating a book information is the same as that when a new book is created*
+
 * Delete an existing book
 
 ### Users
