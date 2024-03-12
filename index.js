@@ -87,7 +87,7 @@ async function main(){
   // 2. AUTHOR,
   // 3. LANGUAGE, AND 
   // 4. PUBLISHER
-  app.get("/api/books", async function(req,res){
+  app.get("/books", async function(req,res){
     try {
       // empty search criteria
       const criteria = {}
@@ -154,7 +154,7 @@ async function main(){
   //   "author": ["David Goggins"],
   //   "publisher_id": ObjectId()
   // }
-  app.post("/api/books", async function(req, res){
+  app.post("/books", async function(req, res){
     try {
       const {
         isbn_ten, 
@@ -228,7 +228,7 @@ async function main(){
   })
 
   // UPDATE A BOOK
-  app.put("/api/books/:bookid", async function(req, res){
+  app.put("/books/:bookid", async function(req, res){
     try {
       const bookId = req.params.bookid;
 
@@ -307,7 +307,7 @@ async function main(){
   })
 
   // DELETE A BOOK
-  app.delete("/api/books/:bookid", async function(req, res){
+  app.delete("/books/:bookid", async function(req, res){
     try {
       const bookId = req.params.bookid;
       const result = await db.collection("books").deleteOne({

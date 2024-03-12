@@ -31,7 +31,37 @@ nodemon
 
 The server will start and the API endpoints may be reached using tools such as Advanced REST Client, Postman or Insomnia
 
+## API Endpoints
+The following API endpoints are available to perform the CRUD operations.
+
+### Books
+* `GET /books` : Retrieve information of all books
+* `POST /books` : Create a new book
+* `PUT /books/{bookid}` : Update details of an existing book
+* `DELETE /books/{bookid}` : Delete an existing book
+
+### Users
+* `POST /user` : Create a new user
+* `POST /login` : Generate JSONWebToken via user login (expires in 3 days)
+* `POST /profile` : Access protected route via valid JSONWebToken
+
 ## Example Usage
+Here are some examples of how you can interact with the API and how it will be logged in MongoDB.
+
+### Books 
+#### Retreve information of all books
+```
+GET http://localhost:3001/books
+```
+![alt text](assets/create-books.png)
+![alt text](assets/create-books-db.png)
+#### Update details of an existing book
+#### Delete an existing book
+
+### Users
+#### Create a new user
+#### Generate JSONWebToken via user login (expires in 3 days)
+#### Access protected route via valid JSONWebToken
 
 ## Technological Stacks Used
 * JavaScript
