@@ -29,7 +29,7 @@ npm install -g nodemon
 nodemon
 ```
 
-The server will start and the API endpoints may be reached using tools such as Advanced REST Client, Postman or Insomnia
+The server will start and the API endpoints may be reached using tools such as Advanced REST Client (ARC), Postman or Insomnia
 
 ## API Endpoints
 The following API endpoints are available to perform the CRUD operations.
@@ -49,19 +49,24 @@ The following API endpoints are available to perform the CRUD operations.
 Here are some examples of how you can interact with the API and how it will be logged in MongoDB.
 
 ### Books 
-#### Retreve information of all books
+* Retreve information of all books
 ```
 GET http://localhost:3001/books
 ```
+Example of successful retrival of book information in ARC
 ![alt text](assets/create-books.png)
+
+Example of book information stored in MongoDB
 ![alt text](assets/create-books-db.png)
-#### Update details of an existing book
-#### Delete an existing book
+
+* Create a new book
+* Update details of an existing book
+* Delete an existing book
 
 ### Users
-#### Create a new user
-#### Generate JSONWebToken via user login (expires in 3 days)
-#### Access protected route via valid JSONWebToken
+* Create a new user
+* Generate JSONWebToken via user login (expires in 3 days)
+* Access protected route via valid JSONWebToken
 
 ## Technological Stacks Used
 * JavaScript
