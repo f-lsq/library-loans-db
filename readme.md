@@ -1,5 +1,3 @@
-Documentation Reference: https://github.com/nadialefebvre/library
-
 # Library System Database
 
 This project was built as a means to learn ExpressJS in conjunction with Mongo Atlas (10 March 2023).
@@ -35,7 +33,7 @@ The server will start and the API endpoints may be reached using tools such as A
 Before running the server, ensure that the following are setup in a `.env` file. Please refer to the `.env.sample` file for the variables required.
 1. **Mongo URI**: This is your connection string from Mongo Atlas. To retrieved your connection string, do the following: Log in to Mongo Atlas > Database > Connect > Drivers (Node.JS) > Copy connection string from section 3.
 2. **MongoDB Name**: This is the name of the mongo database that will store the book information. Create a new database in `Mongo Atlas` or select a new database name by keying it in a `.env` file. An example of a database name is *library-books*.
-3. **Token Secret**: This is the private key used to generate a hash for users' password. You could generate a random key via `https://randomkeygen.com/` (use the 504-bit WPA key for best security).
+3. **Token Secret**: This is the private key used to generate a hash for users' password. You could generate a random key via https://randomkeygen.com/ (use the `504-bit WPA key` for better security).
 
 ## API Endpoints
 The following API endpoints are available to perform the CRUD operations.
@@ -161,3 +159,6 @@ Invalid JSONWebToken used to access protected route in ARC:
 * JavaScript
 * NPM Packages (Express, CORS, DotEnv, bcrypt, JSONWebToken)
 * Mongo Atlas Database
+
+### References
+This readme file was written with reference to the following repository: https://github.com/nadialefebvre/library
