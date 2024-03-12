@@ -139,7 +139,7 @@ New user information stored in MongoDB:
 POST http://localhost:3001/login
 ```
 Successful user login and generation of JSONWebToken in ARC:
-![alt text](assets/login-user.png)
+![alt text](assets/login-users.png)
 
 * Access protected route via valid JSONWebToken
 ```
