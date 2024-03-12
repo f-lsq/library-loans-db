@@ -59,14 +59,20 @@ async function main(){
       // Search by author
       if(req.query.author) {
         criteria.author = {
-          "$in": [req.query.author]
+          "$elemMatch": {
+              "$regex": req.query.author,
+              "$options": 'i' // ignore case
+            }
         }
       }
 
       // Search by language
       if(req.query.language) {
         criteria.language = {
-          "$in": [req.query.language]
+          "$elemMatch": {
+            "$regex": req.query.language,
+            "$options": 'i' // ignore case
+          }
         }
       }
 
