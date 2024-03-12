@@ -31,6 +31,12 @@ nodemon
 
 The server will start and the API endpoints may be reached using tools such as Advanced REST Client (ARC), Postman or Insomnia
 
+## Configuration and Environment Variables
+Before running the server, ensure that the following are setup in a `.env` file. Please refer to the `.env.sample` file for the variables required.
+1. **Mongo URI**: This is your connection string from Mongo Atlas. To retrieved your connection string, do the following: Log in to Mongo Atlas > Database > Connect > Drivers (Node.JS) > Copy connection string from section 3.
+2. **MongoDB Name**: This is the name of the mongo database that will store the book information. Create a new database in `Mongo Atlas` or select a new database name by keying it in a `.env` file. An example of a database name is *library-books*.
+3. **Token Secret**: This is the private key used to generate a hash for users' password. You could generate a random key via `https://randomkeygen.com/` (use the 504-bit WPA key for best security).
+
 ## API Endpoints
 The following API endpoints are available to perform the CRUD operations.
 
@@ -48,7 +54,7 @@ The following API endpoints are available to perform the CRUD operations.
 ## Example Usage
 Here are some examples of how you can interact with the API and how it will be logged in MongoDB.
 
-*Note: The endpoint for books in the screenshots differ from the actual endpoint. Please use the `/books` endpoint!*
+*Note: The endpoint for books in the screenshots differs from the actual endpoint. Please use the `/books` endpoint!*
 
 ### Books 
 * Retrieve information of all books
