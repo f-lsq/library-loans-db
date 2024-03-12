@@ -27,7 +27,7 @@ npm install -g nodemon
 nodemon
 ```
 
-The server will start and the API endpoints may be reached using tools such as Advanced REST Client (ARC), Postman or Insomnia
+The server will start and the API endpoints may be reached using tools such as Advanced REST Client (ARC), Postman or Insomnia.
 
 ## Configuration and Environment Variables
 Before running the server, ensure that the following are setup in a `.env` file. Please refer to the `.env.sample` file for the variables required.
