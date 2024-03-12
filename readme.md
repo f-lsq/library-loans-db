@@ -94,10 +94,32 @@ Validation of other information entered:
 ![alt text](assets/validation-all-info.png)
 
 * Update details of an existing book
+```
+PUT http://localhost:3001/books/{bookid}
+```
+Successful update of existing book information in ARC:
+![alt text](assets/update-books.png)
+
+Existing book information (before update) stored in MongoDB:
+![alt text](assets/create-books-db.png)
+
+Existing book information (after update) stored in MongoDB:
+![alt text](assets/update-books-db.png)
 
 *Note: Validation performed when updating a book information is the same as that when a new book is created*
 
 * Delete an existing book
+```
+DELETE http://localhost:3001/books/{bookid}
+```
+Successful deletion of existing book information in ARC:
+![alt text](assets/delete-books.png)
+
+Existing book information (before deletion) stored in MongoDB:
+![alt text](assets/delete-books-db-before.png)
+
+Existing book information (after deletion) stored in MongoDB:
+![alt text](assets/delete-books-db-after.png)
 
 ### Users
 * Create a new user
