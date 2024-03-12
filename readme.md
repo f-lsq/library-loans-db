@@ -5,11 +5,10 @@ This project was built as a means to learn ExpressJS in conjunction with Mongo A
 ## Overview
 This simple Javascript server acts as a basic library managemement system, allowing users to manage a collection of books. Users will be able to perform CRUD (Create, Delete, Update, Delete) operations on the books through a set of RESTFUL API endpoints. This application was built using the ExpressJS framework and utilises a Mongo Database for database interactions.
 
-Here is a simple entity relationship diagram of the library system
+Here is a simple entity relationship diagram of the library system:
 ![alt text](assets/library-erd.png)
 
 ## Getting Started
-
 To run the Library System server,
 
 1. Install the following packages from Node.JS (Express, CORS, DotEnv and MondoDB)

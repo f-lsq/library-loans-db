@@ -1,7 +1,7 @@
 {
-  "name": "library-loans-db",
+  "name": "library-system-db",
   "version": "1.0.0",
-  "description": "Documentation Reference: https://github.com/nadialefebvre/library",
+  "description": "This simple Javascript server acts as a basic library managemement system, allowing users to manage a collection of books.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,34 +4,34 @@
     "name": "Avery Products Corporation",
     "website": "https://www.avery.com/",
     "email": "consumercentre-it@avery.com",
-    "contact_no": "+1 (800) 462-8379"
+    "contact": "+1 (800) 462-8379"
   },
   {
     "_id": "ObjectId('12346')",
     "name": "Lioncrest Publishing",
     "website": "https://lioncrest.com/",
     "email": "contactus@lioncrest.com",
-    "contact_no": "+1 (763) 532-4353"
+    "contact": "+1 (763) 532-4353"
   },
   {
     "_id": "ObjectId('12347')",
     "name": "Grand Central Publishing",
     "website": "https://www.grandcentralpublishing.com/",
     "email": "contactus@grandcentral.com",
-    "contact_no": "+1 (823) 543-8655"
+    "contact": "+1 (823) 543-8655"
   },
   {
     "_id": "ObjectId('12348')",
     "name": "Plata Publishing",
     "website": "https://www.overdrive.com/publishers/plata-publishing-llc",
     "email": "contactus@glata.com",
-    "contact_no": "+1 (346) 066-5462"
+    "contact": "+1 (346) 066-5462"
   },
   {
     "_id": "ObjectId('12349')",
     "name": "Penguin Life",
     "website": "https://www.penguin.com/penguin-life-overview/",
     "email": "contactus@penguinlife.com",
-    "contact_no": "+1 (563) 245-6375"
+    "contact": "+1 (563) 245-6375"
   }
 ]

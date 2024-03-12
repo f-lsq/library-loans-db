@@ -2,9 +2,11 @@
 const express = require("express");
 const cors = require("cors");
 const mongodb = require("mongodb");
-const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 require("dotenv").config();
+
+// Require functions from JWT file
+const { generateAccessToken, authenticateWithJWT } = require('./jwt');
 
 // Setting up a Mongo Client
 const MongoClient = mongodb.MongoClient;
@@ -21,52 +23,6 @@ app.use(express.json());
 
 const MONGO_URI = process.env.MONGO_URI;
 const DB_NAME = process.env.DB_NAME;
-
-// GENERATE A JSONWEBTOKEN
-function generateAccessToken(id, email) {
-  return jwt.sign({
-    // Payload to be stored
-    "user_id": id,
-    "email": email,
-  }, process.env.TOKEN_SECRET, { // Private key to hash payload
-    "expiresIn": "3d" // JWT expires in 3 days
-  });
-}
-
-// MIDDLEWARE TO CHECK IF VALID JWT IS PROVIDED
-function authenticateWithJWT(req, res, next) {
-  try {
-    const authHeader = req.headers.authorization;
-    if (authHeader) {
-      const token = authHeader.split(" ")[1];
-      jwt.verify(
-        token, 
-        process.env.TOKEN_SECRET, 
-        function(err, payload){
-          if (err) {
-            res.status(400);
-            return res.json({
-              "error": err
-            })
-          } else {
-            // Valid JWT - Forward request to route, and store payload in the request
-            req.payload = payload;
-            next();
-          }
-      })
-    } else {
-      res.status(400);
-      res.json({
-        "error": "Login required to access this route"
-      })
-    }
-  } catch (e) {
-    res.send(500);
-    res.json({
-      "error": e
-    })
-  }
-}
 
 async function main(){
   // Connect to MongoDB

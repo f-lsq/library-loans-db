@@ -1,2 +1,5 @@
+# NPM Modules
 node_modules
+
+# Sensitive information (eg. Mongo URI, DB Name and Private Key)
 .env
