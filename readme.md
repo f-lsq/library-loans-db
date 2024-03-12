@@ -160,5 +160,5 @@ Invalid JSONWebToken used to access protected route in ARC:
 * NPM Packages (Express, CORS, DotEnv, bcrypt, JSONWebToken)
 * Mongo Atlas Database
 
-### References
+## References
 This readme file was written with reference to the following repository: https://github.com/nadialefebvre/library
